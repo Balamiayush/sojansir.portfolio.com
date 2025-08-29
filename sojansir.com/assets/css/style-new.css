@@ -2044,7 +2044,7 @@ main.touch .main-wrap {
 .single-about-image {
     width: 100%;
     display: block;
-    background: var(--color-lightgray);
+    /* background: var(--color-lightgray); */
     overflow: hidden;
     position: relative;
 }
@@ -2056,10 +2056,10 @@ main.touch .main-wrap {
 }
 
 .single-about-image .overlay:nth-child(1) {
-    background: url("../img/DSC07312-2.jpg") center center no-repeat;
-    background-size: cover;
+    background: url("../../../aboutpage/about/assets/img/sojansiraboutmain.jpg") center center no-repeat;
+    background-size: 90%;
     top: -20vh;
-    height: 105%;
+    height: 100%;
 }
 
 .single-about-image .overlay:nth-child(2) {
@@ -2315,7 +2315,7 @@ main.touch .main-wrap {
    top: -25%;
    width: 105%;
    left: -5%; */
-    background: url("../img/DSC07079.jpg") center center no-repeat;
+    background: url("../../../aboutpage/about/assets/img/sojansirAbout1.jpg") center center no-repeat;
     background-size: cover;
     top: -3%;
     height: 106%;

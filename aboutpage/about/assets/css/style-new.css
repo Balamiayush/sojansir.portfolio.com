@@ -2047,7 +2047,7 @@ main.touch .main-wrap {
 .single-about-image {
     width: 100%;
     display: block;
-    /* background: var(--color-lightgray); */
+    background: var(--color-lightgray);
     overflow: hidden;
     position: relative;
 }
@@ -2059,10 +2059,10 @@ main.touch .main-wrap {
 }
 
 .single-about-image .overlay:nth-child(1) {
-    background: url("https://scontent.fmey1-1.fna.fbcdn.net/v/t39.30808-6/465853297_9070775172947011_5834858090638427668_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vL0p9XjRguEQ7kNvwGumi2I&_nc_oc=Adn3kzd3zhGUueEd4ehlrAJekXJ5UR6IHhPE7Qqg02GhljI04MlJOGFwYBp_DaSlgFs&_nc_zt=23&_nc_ht=scontent.fmey1-1.fna&_nc_gid=yMI1SSdyZ13ce8Imz6Xq8A&oh=00_AfXKpYauqLZbjkpS1G17Buj9J8W_u12M-e-lZsAYFEcy2g&oe=68B77FD6") center center no-repeat;
+    background: url("../img/DSC07312-2.jpg") center center no-repeat;
     background-size: cover;
     top: -20vh;
-    height: 80%;
+    height: 105%;
 }
 
 .single-about-image .overlay:nth-child(2) {
@@ -2318,7 +2318,7 @@ main.touch .main-wrap {
    top: -25%;
    width: 105%;
    left: -5%; */
-    background: url("https://shorturl.at/9IcoZ") center center no-repeat;
+    background: url("../img/DSC07079.jpg") center center no-repeat;
     background-size: cover;
     top: -3%;
     height: 106%;
@@ -2391,7 +2391,7 @@ main.touch .main-wrap {
         padding-top: 125%;
     }
     .about-awwwards .single-image .overlay:nth-child(1) {
-        /* background: url("../img/DSC07079.jpg") center center no-repeat; */
+        background: url("../img/DSC07079.jpg") center center no-repeat;
         background-size: cover;
         top: -8%;
         height: 110%;
