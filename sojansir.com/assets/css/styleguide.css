@@ -328,8 +328,8 @@ p a {
 
 .container {
     margin: 0 auto;
-    /* padding-left: var(--container-padding);
-    padding-right: var(--container-padding); */
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
     max-width: 100em;
 }
 
