@@ -30,16 +30,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGWQQRQ15Y"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('set', 'page', window.location.pathname);
-        gtag('send', 'pageview');
-
-        gtag('config', 'G-SGWQQRQ15Y');
+     
     </script>
 
 </head>
@@ -189,7 +180,7 @@
                             </a>
                         </li>
                         <li class="btn btn-link">
-                            <a href="#" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                            <a  href="#work" data-scroll-to="#work" class="btn-click magnetic scroll-link" data-strength="24" data-strength-text="12">
                                 <span class="btn-text">
                                     <span class="btn-text-inner">Work</span>
                                 </span>
@@ -203,7 +194,7 @@
                             </a>
                         </li>
                         <li class="btn btn-link">
-                            <a href="#" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                            <a href="#" id="goContact" class="btn-click magnetic" data-strength="24" data-strength-text="12">
                                 <span class="btn-text">
                                     <span class="btn-text-inner">Contact</span>
                                 </span>
@@ -308,7 +299,7 @@
                 </div>
                 <ul class="links-wrap">
                     <li class="btn btn-link">
-                        <a class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                        <a  href="#work" data-scroll-to="#work"class="btn-click magnetic scroll-link" data-strength="20" data-strength-text="10">
                             <span class="btn-text">
                                 <span class="btn-text-inner">Work</span>
                             </span>
@@ -322,8 +313,8 @@
                             </span>
                         </a>
                     </li>
-                    <li class="btn btn-link">
-                        <a class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                    <li  class="btn btn-link">
+                        <a data-scroll-to="#footer" href="#" class="btn-click magnetic scroll-link" data-strength="20" data-strength-text="10">
                             <span class="btn-text">
                                 <span class="btn-text-inner">Contact</span>
                             </span>
@@ -375,7 +366,7 @@
                 </div>
             </div>
         </section>
-        <section class="section work-grid large-work-grid" data-scroll-section>
+        <section id="work"   class="section work-grid large-work-grid" data-scroll-section>
             <div class="container">
                 <div class="grid-sub-title">
                     <div class="flex-col">
@@ -388,7 +379,7 @@
                 <ul class="work-items mouse-pos-list-image-wrap">
                     <li class="development interaction visible">
                         <div class="stripe animate"></div>
-                        <a href="https://www.tingting.io/" class="row">
+                        <a href="./caseStudy/Tingting.html" class="row">
                             <div class="flex-col">
                                 <h4><span>Ting Ting</span></h4>
                             </div>
@@ -410,7 +401,7 @@
                     </li>
                     <li class="design development interaction visible">
                         <div class="stripe animate"></div>
-                        <a href="https://speakupnepal.org/" class="row">
+                        <a href="./caseStudy/SpeakupNepal.html" class="row">
                             <div class="flex-col">
                                 <h4><span>Speakupnepal</span></h4>
                             </div>
@@ -432,7 +423,7 @@
                     </li>
                     <li class="design development interaction visible">
                         <div class="stripe animate"></div>
-                        <a href="https://www.instagram.com/kathmandu_ko_katha/" class="row">
+                        <a href="./caseStudy/KathmanduKoKatha.html" class="row">
                             <div class="flex-col">
                                 <h4><span>Kathmanduko katha</span></h4>
                             </div>
@@ -450,7 +441,7 @@
                 <ul>
                     <li class="development interaction visible">
                         <div class="single-tile-wrap">
-                            <a href="https://www.tingting.io/" class="row">
+                            <a href="./caseStudy/Tingting.html" class="row">
                                 <div class="flex-col">
                                     <div class="tile-image">
                                         <div class="overlay overlay-image lazy"
@@ -490,16 +481,16 @@
                     </li>
                     <li class="development interaction visible">
                         <div class="single-tile-wrap">
-                            <a href="https://www.tingting.io/" class="row">
+                            <a href="./caseStudy/SpeakupNepal.html" class="row">
                                 <div class="flex-col">
                                     <div class="tile-image">
                                         <div class="overlay overlay-image lazy"
                                             style="background-color: #F1F1F1; background-position: center center; background-repeat: no-repeat; background-size: cover;"
-                                            data-bg="sojansir.com/assets/services/tingting.webp"></div>
+                                            data-bg="sojansir.com/assets/services/speakupnepal.org.webp"></div>
                                     </div>
                                 </div>
                                 <div class="flex-col">
-                                    <h4><span>TingTing</span></h4>
+                                    <h4><span>Speakup Nepal</span></h4>
                                     <div class="stripe"></div>
                                 </div>
                                 <div class="flex-col">
@@ -510,16 +501,16 @@
                     </li>
                     <li class="development interaction visible">
                         <div class="single-tile-wrap">
-                            <a href="https://www.tingting.io/" class="row">
+                            <a href="./caseStudy/RIU.html" class="row">
                                 <div class="flex-col">
                                     <div class="tile-image">
                                         <div class="overlay overlay-image lazy"
                                             style="background-color: #F1F1F1; background-position: center center; background-repeat: no-repeat; background-size: cover;"
-                                            data-bg="sojansir.com/assets/services/tingting.webp"></div>
+                                            data-bg="./caseStudy/rui.png"></div>
                                     </div>
                                 </div>
                                 <div class="flex-col">
-                                    <h4><span>TingTing</span></h4>
+                                    <h4><span>Research and Innovation Unit (RIU), ACEM</span></h4>
                                     <div class="stripe"></div>
                                 </div>
                                 <div class="flex-col">
@@ -543,7 +534,7 @@
                 <div class="rounded-div"></div>
             </div>
         </div>
-        <div class="footer-wrap footer-footer-wrap theme-dark" data-scroll-section>
+        <div  class="footer-wrap footer-footer-wrap theme-dark scroll-to-contact" data-scroll-section>
             <footer class="section footer" data-scroll data-scroll-speed="-4" data-scroll-position="bottom">
                 <div class="container medium">
                     <div class="row">
@@ -620,7 +611,12 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
 
     <script src="https://dennissnellenberg.com/assets/js/locomotive-scroll.min.js"></script>
-    <script defer src="https://dennissnellenberg.com/assets/js/index-new.js"></script>
+    <script defer src="./sojansir.com/assets/js/index-new.js"></script>
+    <script>
+        // init locomotive
+
+
+    </script>
 </body>
 
 </html>

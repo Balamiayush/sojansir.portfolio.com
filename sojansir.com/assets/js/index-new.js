@@ -5,7 +5,39 @@ let scroll;
 const body = document.body;
 const select = (e) => document.querySelector(e);
 const selectAll = (e) => document.querySelectorAll(e);
-//const container = select('.site-main');
+// const container = select('.site-main');
+// Smooth scrolling inside the same page
+document.querySelectorAll(".scroll-link").forEach(link => {
+  link.addEventListener("click", e => {
+    const targetSelector = link.getAttribute("data-scroll-to");
+    const target = document.querySelector(targetSelector);
+
+    if (target) {
+      e.preventDefault();
+      scroll.scrollTo(target, {
+        offset: 0,
+        duration: 1000,
+        easing: [0.25, 0.00, 0.35, 1.00]
+      });
+    }
+  });
+});
+
+// Handle direct URLs like index.html#work or index.html#footer
+window.addEventListener("load", () => {
+  if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if (target) {
+      setTimeout(() => {
+        scroll.scrollTo(target, {
+          offset: 0,
+          duration: 1000,
+          easing: [0.25, 0.00, 0.35, 1.00]
+        });
+      }, 500); // delay for Locomotive init
+    }
+  }
+});
 
 initPageTransitions();
 

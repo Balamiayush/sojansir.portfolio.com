@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Tingting.caseStudy</title>
+    <meta property="og:site_name" content="Sojan" />
+    <meta property="og:locale" content="en" />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:title" content="Tingting.caseStudy" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="google" content="notranslate" />
+    <meta property="og:locale" content="en" />
+    <link rel="canonical" href="./Tingting.html" />
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <style>
+        .main{
+
+    background: #F1F1F1;
+
+}
+
+.caseStudyP{
+    width: 60%;   
+    margin-left: 60%;
+    
+}
+.section{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.caseStudyH1{
+margin-bottom: 0; 
+}
+.container{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 2em;
+}
+.caseStudyImgWrap{
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caseStudyImgWrap img{
+       width: 90%;
+    height: 100%;
+   
+    object-fit: contain;
+
+}
+.page2CaseStudy {
+  width: 100%;
+  min-height: 200vh;
+  /* position: relative; */
+  padding: 2.5em;
+  background: rgb(245, 151, 151);
+  display: flex;
+  gap: 2em;
+}
+.boxWraper{
+    position: sticky;
+    top: 0;
+}
+.boxCaseStudy {
+    background: blue;
+  width: 40%;
+  height: auto;   /* let it stretch */
+  
+  
+}
+
+.CaseStudyContent {
+  flex: 1;
+}
+.page2{
+    background: rgb(255, 72, 72);
+}
+
+.CaseStudyContent {
+  flex: 1; 
+}
+
+.caseStudyArrow{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.625, 0.05, 0, 1);
+
+}
+.caseStudyArrow::after{
+    content: "";
+    
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    
+    position: absolute;
+    /* border-radius: 100%; */
+    top: 20%;
+    right: 10%;
+    transform: scale(0);
+        transition: all 0.4s cubic-bezier(0.625, 0.05, 0, 1);
+
+}
+.caseStudyArrow:hover::after{
+    transform: scale(1.8);
+    z-index: 1;
+        border-radius: 100%;
+}
+
+.caseStudyArrow svg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* center baseline */
+  transition: all 0.5s cubic-bezier(0.625, 0.05, 0, 1);
+}
+
+
+.caseStudyArrow svg{
+    width: 20px;
+    z-index: 10;
+    height: 20px;
+        transition: all 0.4s cubic-bezier(0.625, 0.05, 0, 1);
+}
+.caseStudyArrow .svg1{
+    fill: #fff;
+}
+.caseStudyArrow .svg2{
+    position: absolute;
+    transform: translate(10px,10px);
+    left: -25px;
+    fill: greenyellow;
+}
+.img-wrap{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.caseStudyArrow:hover .svg2{
+    left: 50%;
+    transform: translate(-50%, -50%);
+        transition: all 0.4s cubic-bezier(0.625, 0.05, 0, 1);
+}
+.caseStudyArrow:hover .svg1{
+    z-index: 10;
+    top: -10%;
+    left: 30px;
+        transition: all 0.4s cubic-bezier(0.625, 0.05, 0, 1);
+}
+.Challenge{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.2em;
+    background: #fff;
+    padding: 0.2em 0;
+    font-weight: 600;
+}
+.page2CaseStudy{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
+.CaseStudyContent{
+    width: 50%;
+}
+#target-element{
+    width: 100%;
+    height: 199vh;
+}
+#container{
+    width: 100%;
+     height: 199vh;
+    overflow: hidden;
+}
+.page2{
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+  
+}
+
+.caseStudyContnet{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    align-items: center;
+    /* justify-content: center; */
+}
+.caseStudyContnetP {
+    width: 60%;
+}
+.caseStudyContnetP p{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.caseStudyContnetMain{
+    padding-top: 3.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+@media screen and (max-width: 500px) {
+    .caseStudyContnetMain{
+    padding-top: 2em;
+    }
+    .img-wrap{
+        width: 100%;
+        height:40vh;
+    }
+.caseStudyContnetP {
+    width: 100%;
+           padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+}
+.caseStudyContnetP p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+    .caseStudyP{
+        width: 100%;
+        margin-left: 0%;   
+    }   
+    .caseStudyImgWrap{
+        position: relative;
+        /* background: red; */
+        height: 100%;
+    }
+    .caseStudyImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+    
+    .caseStudyImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 0em;
+    display: block;
+}
+}
+
+    </style>
+    <link href="../../sojansir.com/assets/css/normalize.css" rel="stylesheet">
+    <link href="../../sojansir.com/assets/css/locomotive-scroll.css" rel="stylesheet">
+    <link href="../../sojansir.com/assets/css/styleguide.css" rel="stylesheet">
+    <link href="../../sojansir.com/assets/css/components.css" rel="stylesheet">
+    <link href="../../sojansir.com/assets/css/style-new.css" rel="stylesheet">
+</head>
+
+<body data-barba="wrapper">
+    <div class="no-scroll-overlay"></div>
+    <div class="loading-container">
+        <div class="loading-screen">
+            <div class="rounded-div-wrap top">
+                <div class="rounded-div"></div>
+            </div>
+            <div class="loading-words">
+                <h2 class="home-active home-active-first">Hello
+                    <div class="dot"></div>
+                </h2>
+                <h2 class="home-active">Bonjour
+                    <div class="dot"></div>
+                </h2>
+                <h2 class="home-active">स्वागत हे
+                    <div class="dot"></div>
+                </h2>
+                <h2 class="home-active">Ciao
+                    <div class="dot"></div>
+                </h2>
+                <h2 class="home-active">Olá
+                    <div class="dot"></div>
+                </h2>
+                <h2 class="home-active jap">おい
+                    <div class="dot"></div>
+                </h2>
+                <h2 class="home-active">Hallå
+                    <div class="dot"></div>
+                </h2>
+                <h2 class="home-active">Guten tag
+                    <div class="dot"></div>
+                </h2>
+                <h2 class="home-active-last">Hallo
+                    <div class="dot"></div>
+                </h2>
+                <h2>Home
+                    <div class="dot"></div>
+                </h2>
+                <h2>Work
+                    <div class="dot"></div>
+                </h2>
+                <h2>TWICE
+                    <div class="dot"></div>
+                </h2>
+                <h2>The Damai
+                    <div class="dot"></div>
+                </h2>
+                <h2>FABRIC&trade;
+                    <div class="dot"></div>
+                </h2>
+                <h2>Aanstekelijk
+                    <div class="dot"></div>
+                </h2>
+                <h2>Base Create
+                    <div class="dot"></div>
+                </h2>
+                <h2>AVVR
+                    <div class="dot"></div>
+                </h2>
+                <h2>GraphicHunters
+                    <div class="dot"></div>
+                </h2>
+                <h2>Future Goals
+                    <div class="dot"></div>
+                </h2>
+                <h2>Atypikal
+                    <div class="dot"></div>
+                </h2>
+                <h2>One:Nil
+                    <div class="dot"></div>
+                </h2>
+                <h2>Andy Hardy
+                    <div class="dot"></div>
+                </h2>
+                <h2 class="">About
+                    <div class="dot"></div>
+                </h2>
+                <h2>Contact
+                    <div class="dot"></div>
+                </h2>
+                <h2>Success
+                    <div class="dot"></div>
+                </h2>
+                <h2>Archive
+                    <div class="dot"></div>
+                </h2>
+                <h2>Error
+                    <div class="dot"></div>
+                </h2>
+                <h2 class="active">TingTing
+                    <div class="dot"></div>
+                </h2>
+                <h2>Styleguide
+                    <div class="dot"></div>
+                </h2>
+            </div>
+            <div class="rounded-div-wrap bottom">
+                <div class="rounded-div"></div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main" id="home" data-barba="container" data-barba-namespace="TingTing">
+
+        <div class="btn btn-hamburger">
+            <div class="btn-click magnetic" data-strength="50" data-strength-text="25">
+                <div class="btn-fill"></div>
+                <div class="btn-text">
+                    <div class="btn-bars"></div>
+                    <span class="btn-text-inner">Menu</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay fixed-nav-back"></div>
+
+
+        <div class="fixed-nav theme-dark">
+            <div class="fixed-nav-rounded-div">
+                <div class="rounded-div-wrap">
+                    <div class="rounded-div"></div>
+                </div>
+            </div>
+            <div class="fixed-nav-inner">
+                <div class="row nav-row">
+                    <h5>Navigation</h5>
+                    <div class="stripe"></div>
+                    <ul class="links-wrap">
+                        <li class="btn btn-link">
+                            <a href="./index.html" class="btn-click magnetic" data-strength="24"
+                                data-strength-text="12">
+                                <span class="btn-text">
+                                    <span class="btn-text-inner">Home</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="btn btn-link">
+                            <a href="" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                                <span class="btn-text">
+                                    <span class="btn-text-inner">Work</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="btn btn-link active">
+                            <a href="" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                                <span class="btn-text">
+                                    <span class="btn-text-inner">About</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="btn btn-link">
+                            <a href="" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                                <span class="btn-text">
+                                    <span class="btn-text-inner">Contact</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="main-wrap" data-scroll-container>
+            <header class="section default-header" data-scroll-section data-scroll-container>
+                <div class="nav-bar">
+                    <div class="credits-top">
+                        <div class="btn btn-link btn-left-top">
+                            <a href="/index.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                <span class="btn-text">
+                                    <div class="credit"><span>@</span></div>
+                                    <div class="cbd"><span class="code-by">Sojan</span><span class="dennis"><span
+                                                class="dennis-span">Prajapati</span> <span
+                                                class="snellenberg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sojan
+                                                Prajapati&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+                                </span>
+                        </div>
+                        </span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="links-wrap">
+                    <li class="btn btn-link">
+                        <a href="/" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                            <span class="btn-text">
+                                <span class="btn-text-inner">Work</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="btn btn-link active">
+                        <a href="../aboutpage/about/about.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                            <span class="btn-text">
+                                <span class="btn-text-inner">About</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="btn btn-link">
+                        <a href="" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                            <span class="btn-text">
+                                <span class="btn-text-inner">Contact</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="btn btn-link btn-menu">
+                        <div class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                            <div class="btn-text">
+                                <span class="btn-text-inner">Menu</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+        <div class="container medium once-in">
+            <h1 class="caseStudyH1">TingTing</h1>
+            <p class="caseStudyP">Ting Ting is Nepal’s pioneering AI-powered telephony and communication suite. Designed
+                to empower businesses, institutions, and local governments, Ting Ting enables large-scale,
+                cost-effective, and personalized communication through outbound AI voice calls, SMS, and other automated
+                solutions.</p>
+        </div>
+
+        <div class="img-wrap" data-scroll-container>
+            <div class="caseStudyImgWrap">
+                <img src="./tingtingpng.png" data-scroll data-scroll-speed="-2" data-scroll-position="" />
+            </div>
+        </div>
+        <div class="caseStudyContnet">
+            <div class="challenges caseStudyContnetMain">          
+            <h2>Challenge</h2>
+            <div class="caseStudyContnetP">
+
+                <p>Business communication in Nepal is very fragmented. Every company wants to reach its customers, but
+                    there is no single and effective way to do it. Ting Ting started by focusing on outbound
+                    communication, because even here the problems are huge.
+                </p>
+                <p>
+                    A human caller can make around 70 calls in one day. But a typical business has more than half a
+                    million customers. Reaching everyone manually is simply impossible. Businesses try to solve this
+                    with push notifications or SMS campaigns. But both have major limits.
+
+                </p>
+
+                <p>Most Nepalese own a smartphone, but many do not know how to use apps properly. So push notifications
+                    often don’t reach or make sense to them. SMS campaigns are also not effective, because they feel
+                    impersonal, and businesses cannot really track or take data-driven decisions from them.
+                </p>
+            </div>
+              </div>
+              <div class="solution caseStudyContnetMain">
+
+             
+            <h2>Solution</h2>
+            <div class="caseStudyContnetP">
+
+                <p>Ting Ting brings all communication under one roof, starting with outbound calls. Instead of relying
+                    only on SMS or app notifications, Ting Ting uses AI-powered voice calls that can reach thousands of
+                    people in just a few minutes. The system is simple, scalable, and designed for Nepal.
+
+                </p>
+                <p>
+                    With Ting Ting, a business does not need hundreds of human callers. The platform can run large
+                    campaigns automatically and deliver messages in a personal voice. It also supports local languages,
+                    so people feel more connected and trust the message.
+
+                </p>
+            </div>
+            </div>
+            <div class="technology caseStudyContnetMain">
+
+           
+            <h2>Technology</h2>
+            <div class="caseStudyContnetP">
+
+                <p>Ting Ting is powered by its own text-to-speech engine called <b>Riri</b>. This allows any written
+                    information to be converted into a natural voice, so messages can be delivered in a way that feels
+                    personal and easy to understand.
+
+                </p>
+                <p>
+                    Behind the scenes, Ting Ting also has its own telephony orchestration layer. This is the system that
+                    manages and connects all the calls at scale. Because of this, Ting Ting can run up to one million
+                    outbound calls in a single day, something no human team could ever achieve.
+                </p>
+            </div>
+            </div>
+        </div>
+
+
+        </header>
+          <section class="section center-grid-btn center-grid-btn-home" data-scroll-section>
+
+        </section>
+        <section class="section horizontal-items" data-scroll-section>
+
+        </section>
+        <div class="footer-rounded-div" data-scroll-section>
+            <div class="rounded-div-wrap">
+                <div class="rounded-div"></div>
+            </div>
+        </div>
+        <div class="footer-wrap footer-footer-wrap theme-dark" data-scroll-section>
+            <footer class="section footer" data-scroll data-scroll-speed="-4" data-scroll-position="bottom">
+                <div class="container medium">
+                    <div class="row">
+                        <div class="flex-col">
+                            <div class="arrow">
+                                <?xml version="1.0" encoding="UTF-8"?>
+                                <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <title>arrow-up-right</title>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Artboard" transform="translate(-1019.000000, -279.000000)"
+                                            stroke="#FFFFFF" stroke-width="1.5">
+                                            <g id="arrow-up-right"
+                                                transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)">
+                                                <polyline id="Path" points="2.76923077 0 12 0 12 9.23076923">
+                                                </polyline>
+                                                <line x1="12" y1="0" x2="0" y2="12" id="Path"></line>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <h2>
+                                Lets work together
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flex-col">
+                            <div class="stripe"></div>
+                            <div class="btn-fixed">
+                                <div class="btn btn-round" data-scroll data-scroll-speed="-1"
+                                    data-scroll-direction="horizontal" data-scroll-position="bottom"
+                                    data-scroll-offset="-50%, 0">
+                                    <a href="mailto:sojan.prajapati@prixa.org?subject=Hello%20Sojan&body=I%20wanted%20to%20reach%20out%20to%20you..."
+                                        class="btn-click magnetic " data-strength="100" data-strength-text="50">
+                                        <div class="btn-fill"></div>
+                                        <span class="btn-text">
+                                            <span class="btn-text-inner">Get in touch</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flex-col">
+                            <div class="email-wrapper">
+                                <a href="mailto:sojan.prajapati@prixa.org?subject=Hello%20Sojan&body=I%20wanted%20to%20reach%20out%20to%20you..."
+                                    class="email-link">
+                                    <span class="footerp">sojan.prajapati@prixa.org</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container no-padding">
+
+                </div>
+            </footer>
+            <div class="overlay overlay-gradient"></div>
+        </div>
+        </div>
+    </main>
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.10.3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
+    <script src="../../sojansir.com/assets/js/locomotive-scroll.min.js"></script>
+
+    <script defer src="../../sojansir.com/assets/js/index-new.js"></script>
+</body>
+
+</html>
